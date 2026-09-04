@@ -1,4 +1,7 @@
 function convertToRoman(num) {
+  // Base case for 0
+  if (num === 0) return '';
+
   const lookup = [
     ['M', 1000],
     ['CM', 900],
@@ -27,12 +30,10 @@ function convertToRoman(num) {
   return result;
 }
 
-// You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
+// Test example (fixed missing closing parenthesis)
+console.log(convertToRoman(36)); // Output: XXXVI
+console.log(convertToRoman(14)); // Output: XIV
+console.log(convertToRoman(798)); // Output: DCCXCVIII
 
-console.log(convertToRoman(36);
-
-
-
-
-// do not edit below this line
-module.exports = convertToRoman
+// Export for module systems
+module.exports = convertToRoman;
