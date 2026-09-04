@@ -32,8 +32,7 @@ function convertToRoman(num) {
 
 // Test example (fixed missing closing parenthesis)
 console.log(convertToRoman(36)); // Output: XXXVI
-console.log(convertToRoman(14)); // Output: XIV
-console.log(convertToRoman(798)); // Output: DCCXCVIII
+
 
 // Export for module systems
 module.exports = convertToRoman;
